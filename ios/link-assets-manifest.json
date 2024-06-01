@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/Bevan-Regular.ttf",
+      "sha1": "288cfb3504c5723ef0e50aadd9e42d939738b388"
+    },
+    {
+      "path": "src/assets/fundo.png",
+      "sha1": "a009dd9e436c4cc3b04875c5e1995387e04273df"
+    }
+  ]
+}

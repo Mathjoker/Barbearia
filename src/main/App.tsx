@@ -41,7 +41,7 @@ function App(): React.JSX.Element {
       <StatusBar
       backgroundColor="transparent"
       translucent
-      
+
       />
       <Home/>
     </SafeAreaView>
