@@ -25,6 +25,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Home from '../screens/home';
 
 
 
@@ -41,7 +42,7 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <View style={{backgroundColor:"#FC0", width: Dimensions.get("window").width, height:Dimensions.get("window").height}}></View>
+      <Home/>
     </SafeAreaView>
   );
 }
