@@ -39,8 +39,9 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
+      backgroundColor="transparent"
+      translucent
+      
       />
       <Home/>
     </SafeAreaView>
