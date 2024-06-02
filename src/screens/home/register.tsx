@@ -1,4 +1,4 @@
-import { Button, Dimensions, Image, ImageBackground, StyleSheet, Text, TouchableHighlight, TouchableOpacity, View } from "react-native";
+import { Button, Dimensions, Image, ImageBackground, StyleSheet, Text, TextInput, TouchableHighlight, TouchableOpacity, View } from "react-native";
 import DefaultImage from '../../assets/fundo.png';
 
 const DEFAULT_IMAGE = Image.resolveAssetSource(DefaultImage).uri;
@@ -14,71 +14,61 @@ function Register(){
                     <Text style={style.textBtn2}>
                         Nome
                     </Text>
-                    <TouchableHighlight onPress={()=>console.log("Entrar")} style={style.highLight} activeOpacity={0.9}>
-                    <View style={style.btn}>
-                        
+                    <View style={style.barra}>
+                        <View style={style.section}>
+                            <TextInput style={style.caixaDeTexto}/>
+                        </View>
                     </View>
-                    </TouchableHighlight>
                 </View>
                 <View style={style.frameDown}>
-                    <TouchableHighlight onPress={()=>console.log("Entrar")} style={style.highLight} activeOpacity={0.9}>
-                    <View style={style.btn}>
-                        <Text style={style.textBtn}>
-                            Entrar
-                        </Text>
-                        
+                    <Text style={style.textBtn2}>
+                        Senha
+                    </Text>
+                    <View style={style.barra}>
+                        <View style={style.section}>
+                            <TextInput style={style.caixaDeTexto}/>
+                        </View>
                     </View>
-                    </TouchableHighlight>
-                    <TouchableOpacity>
-                        <Text style={style.textBtn2}>
-                                Criar Conta
-                        </Text>
-                    </TouchableOpacity>
                 </View>
                 <View style={style.frameDown}>
-                    <TouchableHighlight onPress={()=>console.log("Entrar")} style={style.highLight} activeOpacity={0.9}>
-                    <View style={style.btn}>
-                        <Text style={style.textBtn}>
-                            Entrar
-                        </Text>
-                        
+                    <Text style={style.textBtn2}>
+                        Senha
+                    </Text>
+                    <View style={style.barra}>
+                        <View style={style.section}>
+                            <TextInput style={style.caixaDeTexto}/>
+                        </View>
                     </View>
-                    </TouchableHighlight>
-                    <TouchableOpacity>
-                        <Text style={style.textBtn2}>
-                                Criar Conta
-                        </Text>
-                    </TouchableOpacity>
                 </View>
                 <View style={style.frameDown}>
-                    <TouchableHighlight onPress={()=>console.log("Entrar")} style={style.highLight} activeOpacity={0.9}>
-                    <View style={style.btn}>
-                        <Text style={style.textBtn}>
-                            Entrar
-                        </Text>
-                        
+                    <Text style={style.textBtn2}>
+                        Senha
+                    </Text>
+                    <View style={style.barra}>
+                        <View style={style.section}>
+                            <TextInput style={style.caixaDeTexto}/>
+                        </View>
                     </View>
-                    </TouchableHighlight>
-                    <TouchableOpacity>
-                        <Text style={style.textBtn2}>
-                                Criar Conta
-                        </Text>
-                    </TouchableOpacity>
                 </View>
                 <View style={style.frameDown}>
-                    <TouchableHighlight onPress={()=>console.log("Entrar")} style={style.highLight} activeOpacity={0.9}>
-                    <View style={style.btn}>
-                        <Text style={style.textBtn}>
-                            Entrar
-                        </Text>
-                        
+                    <Text style={style.textBtn2}>
+                        Senha
+                    </Text>
+                    <View style={style.barra}>
+                        <View style={style.section}>
+                            <TextInput style={style.caixaDeTexto}/>
+                        </View>
                     </View>
-                    </TouchableHighlight>
-                    <TouchableOpacity>
-                        <Text style={style.textBtn2}>
-                                Criar Conta
-                        </Text>
-                    </TouchableOpacity>
+                </View>
+                <View style={style.frameDown}>
+                    <Text style={style.textBtn2}>
+                        Senha
+                    </Text>
+                    <View style={style.barra}>
+                        <View style={style.section}>
+                            <TextInput style={style.caixaDeTexto}/>
+                        </View>
+                    </View>
                 </View>
         </ImageBackground>
     </View>
@@ -86,7 +76,8 @@ function Register(){
 const style = StyleSheet.create({
     container:{
         width: Dimensions .get('window').width, 
-        height: Dimensions .get('screen').height 
+        height: Dimensions .get('screen').height,
+        paddingBottom: 10 
     }, 
     image: {
         flex: 1,
@@ -98,7 +89,7 @@ const style = StyleSheet.create({
         fontSize: 42,
         alignSelf: 'center',
         textAlign: 'center',
-        paddingTop: 22
+        paddingTop: 10
     },
     subTitulo: {
         fontFamily: "Bevan-Regular", 
@@ -109,8 +100,7 @@ const style = StyleSheet.create({
     },
     frameUp: {
         flex: 2,
-        
-
+        paddingTop:30
     },
     frameDown: {
         flex: 1,
@@ -119,7 +109,7 @@ const style = StyleSheet.create({
     btn: {
         width: '100%',
         alignItems: 'center',
-        backgroundColor: '#e38900',
+        backgroundColor: '#FFFFFF',
         
         height: 51,
         borderRadius: 20,
@@ -136,10 +126,28 @@ const style = StyleSheet.create({
     },
     textBtn2: {
         fontFamily: "Bevan-Regular", 
-        color:"#FFF",
+        color:"#e38900",
         paddingLeft: 50,
         paddingBottom: 5,
         fontSize: 16
+    },
+    caixaDeTexto: {
+        paddingLeft: 25,
+        backgroundColor: "#FFF",
+        borderRadius: 20,
+        flex: 1
+    },
+    barra: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 20,
+        fontSize: 35,
+    },
+    section: {
+        height: 50,
+        width: "100%",
+
     }
 
 })
