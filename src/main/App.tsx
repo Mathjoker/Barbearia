@@ -26,6 +26,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import Home from '../screens/home';
+import Register from '../screens/home/register'
 
 
 
@@ -43,7 +44,8 @@ function App(): React.JSX.Element {
       translucent
 
       />
-      <Home/>
+      {/* <Home/> */}
+      <Register/>
     </SafeAreaView>
   );
 }
