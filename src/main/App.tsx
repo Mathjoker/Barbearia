@@ -27,6 +27,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import Home from '../screens/home';
 import Register from '../screens/home/register'
+import Acessar from '../screens/home/acessar';
 
 
 
@@ -45,7 +46,8 @@ function App(): React.JSX.Element {
 
       />
       {/* <Home/> */}
-      <Register/>
+      {/*<Register/>*/}
+      <Acessar/>
     </SafeAreaView>
   );
 }
