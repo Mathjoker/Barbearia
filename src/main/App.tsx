@@ -46,8 +46,8 @@ function App(): React.JSX.Element {
 
       />
       {/* <Home/> */}
-      {/*<Register/>*/}
-      <Acessar/>
+      <Register/>
+      {/*<Acessar/>*/}
     </SafeAreaView>
   );
 }
